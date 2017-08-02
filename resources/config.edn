@@ -1,0 +1,12 @@
+{:amqp                       {:url                           "amqp://guest:guest@rmq:5672"
+                              :sessions-exchange             "sessions"
+                              :raw-sessions-routing-key      "sessions.raw"
+                              :ocpp-exchange                 "ocpp"
+                              :ocpp-msg-routing-key          "ocpp.msgs"
+                              :connection-events-routing-key "ocpp.connection-events"}
+ :aws                        {:access-key   "foo"
+                              :secret-key   "bar"
+                              :dyn-endpoint "http://dynamodb:8000"}
+ :port                       8080
+ :default-heartbeat-interval 1200
+ :charge-box-service-url     "http://charge-box-service:8083"}
